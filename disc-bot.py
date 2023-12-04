@@ -5,6 +5,7 @@ import code         # code.interact
 import os           # environment variables
 import inspect      # call stack inspection
 import random       # dumb random number generator
+import argparse
  
 from discord.ext import commands    # Bot class and utils
  
@@ -12,6 +13,7 @@ from discord.ext import commands    # Bot class and utils
 ############################### HELPER FUNCTIONS ###############################
 ################################################################################
  
+parser = argparse.ArgumentParser()
 # log_msg - fancy print
 #   @msg   : string to print
 #   @level : log level from {'debug', 'info', 'warning', 'error'}
